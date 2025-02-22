@@ -6,7 +6,7 @@
 ---
 
 ## 🌟 Features  
-- ✅ **📌 Track Expenses** – Log all your daily, weekly, and monthly expenses in one place.
+- ✅ **📌 Enter Your Skills** – Provide your expertise, and get tailored project ideas.
 - ✅ **📊 Interactive Charts** – Visualize spending trends using **Chart.js**.  
 - ✅ **🔔 Budget Alerts** – Get notified when you're close to exceeding your budget. .  
 - ✅ **🎨 Sleek UI & Animations** – Clean, modern design with smooth transitions. 
