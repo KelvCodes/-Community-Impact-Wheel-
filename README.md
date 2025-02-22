@@ -37,7 +37,7 @@
 
 2️⃣   **Get Project Ideas** – AI instantly recommends tailored projects for you! 💡
 
-3️⃣   
+3️⃣  **Start Building** – Pick a project and start coding! 🚀   
 
 4️⃣ **Stay Alert** – Get notifications when spending exceeds your budget. 🔔
 
