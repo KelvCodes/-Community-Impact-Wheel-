@@ -58,7 +58,7 @@
 
 ## 🤝 Contributing  
 
-Want to make Personal Finance Coach Web App even better? We’d love your help! 💡  
+Want to make Skill Projector Web App even better? We’d love your help! 💡  
 1. Fork this repository.  
 2. Create a new branch:  
    ```bash  
