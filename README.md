@@ -10,7 +10,7 @@
 - ✅ **🤖 AI-Powered Recommendations** – Get smart suggestions based on industry trends.  
 - ✅ **🎨 Sleek & Intuitive UI** – Enjoy a clean, modern, and smooth experience. 
 - ✅ **🌙 Dark Mode** – Work comfortably, day or night.   
-- ✅ **🌙 Dark Mode** – Manage finances comfortably, day or night.  
+- ✅  
 - ✅ **📱 Fully Responsive** – Works seamlessly on mobile & desktop.   
   
 ---      
