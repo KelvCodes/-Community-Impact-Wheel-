@@ -48,7 +48,7 @@
 
 1. Clone this repository to your local machine:  
    ```bash  
-   git clone https://github.com/yourusername/skill-pro.git
+   git clone https://github.com/yourusername/skill-proj.git
    ```  
 
 2. Open the `index.html` file in your favorite web browser. 🌐  
