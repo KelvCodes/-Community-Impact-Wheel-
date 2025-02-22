@@ -35,7 +35,7 @@
 ## 🚀 How to Use 
 1️⃣  
 
-2️⃣ **Analyze Spending** – View real-time charts showing spending patterns. 📊   
+2️⃣  
 
 3️⃣ **Set Budget Goals** – Define your budget and track progress. 🎯  
 
