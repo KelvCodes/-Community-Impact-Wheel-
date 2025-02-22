@@ -7,7 +7,7 @@
 
 ## 🌟 Features  
 - ✅ **📌 Enter Your Skills** – Provide your expertise, and get tailored project ideas.
-- ✅ **📊 Interactive Charts** – Visualize spending trends using **Chart.js**.  
+- ✅ **🤖 AI-Powered Recommendations** – Get smart suggestions based on industry trends.  
 - ✅ **🔔 Budget Alerts** – Get notified when you're close to exceeding your budget. .  
 - ✅ **🎨 Sleek UI & Animations** – Clean, modern design with smooth transitions. 
 - ✅ **🌙 Dark Mode** – Manage finances comfortably, day or night.  
