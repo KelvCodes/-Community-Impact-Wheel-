@@ -35,7 +35,7 @@
 ## 🚀 How to Use 
 1️⃣  **Enter Your Skills** – Type in the skills you have (e.g., JavaScript, UI/UX). 🎯
 
-2️⃣  
+2️⃣   **Get Project Ideas** – AI instantly recommends tailored projects for you! 💡
 
 3️⃣ **Set Budget Goals** – Define your budget and track progress. 🎯  
 
