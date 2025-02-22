@@ -33,7 +33,7 @@
 ---
 
 ## 🚀 How to Use 
-1️⃣  
+1️⃣  **Enter Your Skills** – Type in the skills you have (e.g., JavaScript, UI/UX). 🎯
 
 2️⃣  
 
