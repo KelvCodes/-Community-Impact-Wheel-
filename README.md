@@ -33,7 +33,7 @@
 ---
 
 ## 🚀 How to Use 
-1️⃣ **Add Expenses** – Enter the amount and category. 📝 
+1️⃣  
 
 2️⃣ **Analyze Spending** – View real-time charts showing spending patterns. 📊   
 
