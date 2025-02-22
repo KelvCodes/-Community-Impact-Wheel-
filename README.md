@@ -11,7 +11,7 @@
 - ✅ **🎨 Sleek & Intuitive UI** – Enjoy a clean, modern, and smooth experience. 
 - ✅ **🌙 Dark Mode** – Work comfortably, day or night.   
 - ✅ **📱 Fully Responsive** – Optimized for mobile & desktop users. 
-- ✅ **📱 Fully Responsive** – Works seamlessly on mobile & desktop.   
+  
   
 ---      
 ## 🎬 Live Demo 
