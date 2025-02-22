@@ -37,7 +37,7 @@
 
 2️⃣   **Get Project Ideas** – AI instantly recommends tailored projects for you! 💡
 
-3️⃣ **Set Budget Goals** – Define your budget and track progress. 🎯  
+3️⃣   
 
 4️⃣ **Stay Alert** – Get notifications when spending exceeds your budget. 🔔
 
