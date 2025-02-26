@@ -10,7 +10,7 @@ A **fun and interactive** web app that encourages users to make a positive impac
 - ✅ **🌍 Social Responsibility Focus** – Actions that help the environment & society. 
 - ✅ **🎭 Smooth Animations** – Realistic wheel spinning with easing effects. 
 - ✅ **📅 Daily Challenges** – A fresh new challenge every day!  
-- ✅ **📱 Fully Responsive** – Optimized for mobile & desktop users. 
+- ✅**📊 Progress Tracking** – Keep a history of completed challenges.
   
   
 ---      
