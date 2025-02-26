@@ -6,7 +6,7 @@ A **fun and interactive** web app that encourages users to make a positive impac
 ---
 
 ## 🌟 Features  
-- ✅ **📌 Enter Your Skills** – Provide your expertise, and get tailored project ideas.
+- ✅ **🎡 Interactive Wheel** – Get a random daily challenge with each spin.  
 - ✅ **🤖 AI-Powered Recommendations** – Get smart suggestions based on industry trends.  
 - ✅ **🎨 Sleek & Intuitive UI** – Enjoy a clean, modern, and smooth experience. 
 - ✅ **🌙 Dark Mode** – Work comfortably, day or night.   
