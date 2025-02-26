@@ -1,6 +1,6 @@
 # 🌍 Community Impact Wheel – Gamify Social Good! 🎡✨   
 
- A **smart web app** that suggests project ideas based on your skills! Just enter your skills, and let AI recommend the perfect projects to boost your expertise. Ideal for developers, designers, and learners! 💡✨  
+ **fun and interactive** web app that encourages users to make a positive impact on their community! Spin the wheel to receive **daily challenges** like planting a tree, reducing plastic use, or supporting local businesses. Track your progress and celebrate your achievements! 🌱🤝
 
 
 ---
