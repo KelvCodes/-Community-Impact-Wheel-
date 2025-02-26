@@ -35,7 +35,7 @@ A **fun and interactive** web app that encourages users to make a positive impac
 ---
 
 ## 🚀 How to Use 
-1️⃣  **Enter Your Skills** – Type in the skills you have (e.g., JavaScript, UI/UX). 🎯
+1️⃣  
 
 2️⃣   **Get Project Ideas** – AI instantly recommends tailored projects for you! 💡
 
