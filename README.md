@@ -59,7 +59,7 @@ A **fun and interactive** web app that encourages users to make a positive impac
 
 ## 🤝 Contributing  
 
-Want to make  Web App even better? We’d love your help! 💡  
+Want to make Community Web App even better? We’d love your help! 💡  
 1. Fork this repository.  
 2. Create a new branch:  
    ```bash  
