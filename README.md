@@ -11,6 +11,7 @@ A **fun and interactive** web app that encourages users to make a positive impac
 - ✅ **🎭 Smooth Animations** – Realistic wheel spinning with easing effects. 
 - ✅ **📅 Daily Challenges** – A fresh new challenge every day!  
 - ✅ **📊 Progress Tracking** – Keep a history of completed challenges.
+- ✅ **🎉 Confetti Animation** – Celebrate completed challenges with style! 
   
   
 ---      
