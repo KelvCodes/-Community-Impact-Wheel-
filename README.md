@@ -37,7 +37,7 @@ A **fun and interactive** web app that encourages users to make a positive impac
 ## 🚀 How to Use 
 1️⃣  **Spin the Wheel** – Click the spin button and receive a challenge! 🎡
 
-2️⃣   **Get Project Ideas** – AI instantly recommends tailored projects for you! 💡
+2️⃣  
 
 3️⃣  **Start Building** – Pick a project and start coding! 🚀   
 
