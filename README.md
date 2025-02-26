@@ -39,8 +39,7 @@ A **fun and interactive** web app that encourages users to make a positive impac
 
 2️⃣  **Complete the Task** – Follow through and make a difference! 🌍 
 
-3️⃣  **Start Building** – Pick a project and start coding! 🚀   
-
+3️⃣  **Track Your Progress** – Keep a log of completed challenges. ✅  
 
 
 
