@@ -9,7 +9,7 @@ A **fun and interactive** web app that encourages users to make a positive impac
 - ✅ **🎡 Interactive Wheel** – Get a random daily challenge with each spin.  
 - ✅ **🌍 Social Responsibility Focus** – Actions that help the environment & society. 
 - ✅ **🎭 Smooth Animations** – Realistic wheel spinning with easing effects. 
-- ✅ **🌙 Dark Mode** – Work comfortably, day or night.   
+- ✅ **📅 Daily Challenges** – A fresh new challenge every day!  
 - ✅ **📱 Fully Responsive** – Optimized for mobile & desktop users. 
   
   
