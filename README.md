@@ -49,7 +49,7 @@ A **fun and interactive** web app that encourages users to make a positive impac
 
 1. Clone this repository to your local machine:  
    ```bash  
-   git clone https://github.com/yourusername/community.git
+   git clone https://github.com/yourusername/community-.git
    ```  
 
 2. Open the `index.html` file in your favorite web browser. 🌐  
