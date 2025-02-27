@@ -1,0 +1,168 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #e0f7fa, #80deea);
+    color: #333;
+    transition: background 0.3s, color 0.3s;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  #dark-mode-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+  /* Wheel Container */
+  .wheel-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .wheel {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    transition: transform 5s ease-in-out;
+  }
+  
+  .wheel-section {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(50% 50%, 100% 0, 100% 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-origin: center;
+  }
+  
+  .wheel-section span {
+    transform: rotate(90deg);
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .spin-button {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background: #4caf50;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s;
+  }
+  
+  .spin-button:hover {
+    background: #45a049;
+  }
+  
+  .pointer {
+    position: absolute;
+    top: -20px;
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 30px solid #333;
+  }
+  
+  /* Challenge Display */
+  .challenge-display {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #challenge-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  #complete-challenge {
+    padding: 10px 20px;
+    background: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+  }
+  
+  #complete-challenge:hover {
+    background: #45a049;
+  }
+  
+  /* Progress Tracker */
+  .progress-tracker {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #completed-count {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4caf50;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  /* Dark Mode */
+  body.dark-mode {
+    background: linear-gradient(135deg, #333, #000);
+    color: #f5f7fa;
+  }
+  
+  body.dark-mode .container {
+    background: #444;
+    color: #f5f7fa;
+  }
+  
+  body.dark-mode .wheel-section span {
+    color: #333;
+  }

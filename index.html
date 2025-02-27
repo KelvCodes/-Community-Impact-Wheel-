@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community Impact Wheel</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <h1>Community Impact Wheel 🌍</h1>
+      <button id="dark-mode-toggle">🌙</button>
+    </header>
+
+    <!-- Wheel Container -->
+    <div class="wheel-container">
+      <div class="wheel" id="wheel">
+        <!-- Wheel sections will be dynamically added here -->
+      </div>
+      <div class="spin-button" id="spin-btn">Spin</div>
+      <div class="pointer"></div>
+    </div>
+
+    <!-- Challenge Display -->
+    <div class="challenge-display" id="challenge-display">
+      <h2>Your Challenge:</h2>
+      <p id="challenge-text"></p>
+      <button id="complete-challenge">Complete Challenge</button>
+    </div>
+
+    <!-- Progress Tracker -->
+    <div class="progress-tracker">
+      <h2>Your Impact</h2>
+      <p>Challenges Completed: <span id="completed-count">0</span></p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>"Small actions lead to big changes."</p>
+      <p>&copy; 2023 Community Impact Wheel    Designed By <a href="https://github.com/KelvCodes">Agyare Kelvin</a></p>
+    </footer>
+  </div>
+
+  <!-- Confetti Canvas -->
+  <canvas id="confetti"></canvas>
+
+  <!-- Sound Effects -->
+  <audio id="spin-sound" src="spin-sound.mp3"></audio>
+  <audio id="win-sound" src="win-sound.mp3"></audio>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
