@@ -1,9 +1,5 @@
 nsition: transform 5s ease-in-out;
-y-content: center;
-    align-items: center;
-    transform-origin: center;
-  }
-  
+y-c
   .wheel-section span {
     transform: rotate(90deg);
     font-size: 1rem;
