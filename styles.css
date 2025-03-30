@@ -1,12 +1,4 @@
-: 1rem;
-    transition: background 0.3s;
-  }
-  
-  #complete-challenge:hover {
-    background: #45a049;
-  }
-  
-  /* Progress Tracker */
+racker */
   .progress-tracker {
     text-align: center;
     margin-bottom: 20px;
