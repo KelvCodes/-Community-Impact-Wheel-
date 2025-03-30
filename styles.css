@@ -1,12 +1,4 @@
-nsition: transform 5s ease-in-out;
-
-  .spin-button {
-    position: absolute;
-    width: 80px;
-    height: 80px;
-    background: #4caf50;
-    color: white;
-    border-radius: 50%;
+s: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
