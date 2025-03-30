@@ -1,12 +1,4 @@
-
-  
-  .container {
-/* Header */
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
+argin-bottom: 20px;
   }
   
   h1 {
