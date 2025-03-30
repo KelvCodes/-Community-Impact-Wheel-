@@ -1,9 +1,5 @@
 
-  /* Wheel Container */
-  .wheel-container {
-    position: relative;
-    display: flex;
-    justify-content: center;
+ify-content: center;
     align-items: center;
     margin-bottom: 20px;
   }
