@@ -1,13 +1,7 @@
 inter;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: background 0.3s;
-  }
-  
-  .spin-button:hover {
-    background: #45a049;
-  }
-  
-  .pointer {
+
     position: absolute;
     top: -20px;
     width: 0;
