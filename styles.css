@@ -1,1 +1,570 @@
 
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Variables */
+:root {
+  --primary: #4caf50;
+  --primary-dark: #45a049;
+  --secondary: #6b5b95;
+  --accent: #ff6f61;
+  --text: #333;
+  --text-light: #777;
+  --bg: linear-gradient(135deg, #e0f7fa, #80deea);
+  --container-bg: rgba(255, 255, 255, 0.95);
+  --shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  --transition: all 0.3s ease;
+}
+
+/* Dark Mode Variables */
+.dark-mode {
+  --text: #f5f7fa;
+  --text-light: #bbb;
+  --bg: linear-gradient(135deg, #1a1a2e, #16213e);
+  --container-bg: rgba(30, 30, 46, 0.95);
+  --shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: var(--transition);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Wheel Panel */
+.wheel-panel {
+  flex: 1;
+  padding: 30px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+}
+
+/* Motivation Panel */
+.motivation-panel {
+  flex: 1;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.03);
+  border-left: 1px solid rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.dark-mode .motivation-panel {
+  background: rgba(255, 255, 255, 0.03);
+  border-left: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.wheel-emoji {
+  animation: float 3s ease-in-out infinite;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+}
+
+.controls button {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: var(--text);
+  transition: var(--transition);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.controls button:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+/* Wheel Container */
+.wheel-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  height: 320px;
+  perspective: 1000px;
+}
+
+.wheel {
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  transition: transform 4s cubic-bezier(0.17, 0.67, 0.12, 0.99);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transform-style: preserve-3d;
+}
+
+.wheel-section {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(50% 50%, 100% 0, 100% 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-origin: center;
+  backface-visibility: visible;
+}
+
+.wheel-section span {
+  transform: rotate(90deg);
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  width: 100px;
+}
+
+.spin-button {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transition: var(--transition);
+  z-index: 10;
+  border: none;
+  overflow: hidden;
+}
+
+.spin-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.spin-button:active {
+  transform: scale(0.98);
+}
+
+.sparkle {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0) 70%);
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.spin-button:hover .sparkle {
+  opacity: 1;
+}
+
+.pointer {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 40px solid var(--accent);
+  z-index: 5;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+}
+
+/* Challenge Display */
+.challenge-display {
+  text-align: center;
+  margin-bottom: 30px;
+  background: rgba(0, 0, 0, 0.05);
+  padding: 20px;
+  border-radius: 15px;
+  transition: var(--transition);
+}
+
+.challenge-display h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: var(--text);
+}
+
+#challenge-text {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 15px;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.challenge-timer {
+  margin: 15px 0;
+}
+
+.timer-bar {
+  height: 8px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.timer-bar::after {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  border-radius: 4px;
+  animation: timerAnimation 86400s linear forwards;
+}
+
+.challenge-timer span {
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+.challenge-actions {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.challenge-actions button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#complete-challenge {
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: white;
+}
+
+#complete-challenge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
+}
+
+#share-challenge {
+  background: rgba(0, 0, 0, 0.05);
+  color: var(--text);
+}
+
+#share-challenge:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+/* Achievement Tracker */
+.achievement-tracker {
+  margin-bottom: 30px;
+}
+
+.achievement-tracker h2 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.milestones {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.milestone {
+  flex: 1;
+  background: rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.milestone::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(76, 175, 80, 0.1), rgba(107, 91, 149, 0.1));
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.milestone.locked {
+  filter: grayscale(0.8);
+  opacity: 0.7;
+}
+
+.milestone.unlocked::after {
+  opacity: 1;
+}
+
+.milestone.unlocked .badge {
+  animation: bounce 0.5s ease;
+  color: var(--primary);
+  text-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+}
+
+.badge {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: var(--text-light);
+  transition: var(--transition);
+}
+
+.milestone p {
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.milestone small {
+  font-size: 0.8rem;
+  color: var(--text-light);
+}
+
+/* Quote Container */
+.quote-container {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.quote-slider {
+  width: 100%;
+  position: relative;
+}
+
+.quote {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 1s ease, transform 1s ease;
+  transform: translateY(20px);
+}
+
+.quote.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.quote p {
+  font-size: 1.5rem;
+  font-style: italic;
+  margin-bottom: 10px;
+  color: var(--text);
+}
+
+.quote small {
+  font-size: 1rem;
+  color: var(--text-light);
+}
+
+/* Progress Tracker */
+.progress-tracker {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--container-bg);
+  padding: 15px;
+  box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.progress-container {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.progress-bar {
+  flex-grow: 1;
+  height: 10px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  border-radius: 5px;
+  transition: width 0.5s ease;
+}
+
+.progress-marker {
+  position: absolute;
+  top: -5px;
+  width: 4px;
+  height: 20px;
+  background: rgba(0, 0, 0, 0.3);
+  transform: translateX(-50%);
+}
+
+.progress-tracker span {
+  font-weight: 600;
+  color: var(--text);
+}
+
+#completed-count {
+  color: var(--primary);
+  font-size: 1.2rem;
+}
+
+/* Particles */
+#particles-js {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.3;
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(76, 175, 80, 0.7); }
+  70% { box-shadow: 0 0 0 10px rgba(76, 175, 80, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(76, 175, 80, 0); }
+}
+
+@keyframes timerAnimation {
+  from { width: 100%; }
+  to { width: 0%; }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes glow {
+  0% { box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); }
+  50% { box-shadow: 0 0 20px rgba(76, 175, 80, 0.8); }
+  100% { box-shadow: 0 0 5px rgba(76, 175, 80, 0.5); }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .app-container {
+    flex-direction: column;
+  }
+  
+  .motivation-panel {
+    border-left: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+  }
+  
+  .dark-mode .motivation-panel {
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  
+  .milestones {
+    flex-wrap: wrap;
+  }
+  
+  .milestone {
+    min-width: calc(50% - 10px);
+  }
+}
+
+@media (max-width: 768px) {
+  .wheel {
+    width: 280px;
+    height: 280px;
+  }
+  
+  .spin-button {
+    width: 80px;
+    height: 80px;
+    font-size: 1rem;
+  }
+  
+  .challenge-actions {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .milestone {
+    min-width: 100%;
+  }
+}
