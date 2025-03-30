@@ -1,1 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Community Impact Wheel</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Left Panel - Wheel -->
+    <div class="wheel-panel">
+      <header>
+        <h1>Community Impact <span class="wheel-emoji">🌍</span></h1>
+        <div class="controls">
+          <button id="sound-toggle" title="Toggle sound"><i class="fas fa-volume-up"></i></button>
+          <button id="dark-mode-toggle" title="Toggle dark mode"><i class="fas fa-moon"></i></button>
+        </div>
+      </header>
 
+      <div class="wheel-container">
+        <div class="wheel" id="wheel"></div>
+        <div class="spin-button" id="spin-btn">
+          <span>SPIN</span>
+          <div class="sparkle"></div>
+        </div>
+        <div class="pointer"></div>
+      </div>
+
+      <div class="challenge-display" id="challenge-display">
+        <h2>Your Challenge:</h2>
+        <p id="challenge-text">Spin the wheel to get a challenge!</p>
+        <div class="challenge-timer">
+          <div class="timer-bar"></div>
+          <span>Complete within 24 hours!</span>
+        </div>
+        <div class="challenge-actions">
+          <button id="complete-challenge" class="pulse">Complete Challenge</button>
+          <button id="share-challenge"><i class="fas fa-share-alt"></i> Share</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Panel - Motivational Content -->
+    <div class="motivation-panel">
+      <div class="achievement-tracker">
+        <h2>Your Achievements</h2>
+        <div class="milestones">
+          <div class="milestone" data-target="3">
+            <div class="badge"><i class="fas fa-seedling"></i></div>
+            <p>Eco Helper</p>
+            <small>Complete 3 challenges</small>
+          </div>
+          <div class="milestone" data-target="5">
+            <div class="badge"><i class="fas fa-hands-helping"></i></div>
+            <p>Community Star</p>
+            <small>Complete 5 challenges</small>
+          </div>
+          <div class="milestone" data-target="10">
+            <div class="badge"><i class="fas fa-trophy"></i></div>
+            <p>Impact Champion</p>
+            <small>Complete 10 challenges</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="quote-container">
+        <div class="quote-slider">
+          <div class="quote active">
+            <p>"The best way to find yourself is to lose yourself in the service of others."</p>
+            <small>- Mahatma Gandhi</small>
+          </div>
+          <div class="quote">
+            <p>"We make a living by what we get, but we make a life by what we give."</p>
+            <small>- Winston Churchill</small>
+          </div>
+          <div class="quote">
+            <p>"Small acts, when multiplied by millions of people, can transform the world."</p>
+            <small>- Howard Zinn</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="particles" id="particles-js"></div>
+    </div>
+
+    <!-- Progress Tracker (Fixed at Bottom) -->
+    <div class="progress-tracker">
+      <div class="progress-container">
+        <div class="progress-bar">
+          <div class="progress-fill" id="progress-fill"></div>
+          <div class="progress-marker" style="left: 30%;" data-target="3"></div>
+          <div class="progress-marker" style="left: 50%;" data-target="5"></div>
+          <div class="progress-marker" style="left: 100%;" data-target="10"></div>
+        </div>
+        <span id="completed-count">0</span>/<span id="total-challenges">10</span> completed
+      </div>
+    </div>
+  </div>
+
+  <!-- Confetti Canvas -->
+  <canvas id="confetti"></canvas>
+
+  <!-- Sound Effects -->
+  <audio id="spin-sound" src="https://assets.mixkit.co/sfx/preview/mixkit-game-show-spin-wheel-1929.mp3"></audio>
+  <audio id="win-sound" src="https://assets.mixkit.co/sfx/preview/mixkit-winning-chimes-2015.mp3"></audio>
+  <audio id="complete-sound" src="https://assets.mixkit.co/sfx/preview/mixkit-achievement-bell-600.mp3"></audio>
+  <audio id="achievement-sound" src="https://assets.mixkit.co/sfx/preview/mixkit-unlock-game-notification-253.mp3"></audio>
+
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
