@@ -1,8 +1,5 @@
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #e0f7fa, #80deea);
-    color: #333;
     transition: background 0.3s, color 0.3s;
     margin: 0;
     padding: 0;
