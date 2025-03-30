@@ -1,11 +1,4 @@
-
-   Display */
-  .challenge-display {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  #challenge-text {
+hallenge-text {
     font-size: 1.2rem;
     font-weight: bold;
     color: #333;
