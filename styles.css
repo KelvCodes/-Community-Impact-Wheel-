@@ -1,10 +1,4 @@
-inter;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: background 0.3s;
 
-    position: absolute;
-    top: -20px;
-    width: 0;
     height: 0;
     border-left: 15px solid transparent;
     border-right: 15px solid transparent;
