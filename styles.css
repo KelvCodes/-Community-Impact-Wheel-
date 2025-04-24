@@ -1,11 +1,5 @@
 
-/* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-
-/* Variables */
-:root {
-  --primary: #4caf50;
-  --primary-dark: #45a049;
+rimary-dark: #45a049;
   --secondary: #6b5b95;
   --accent: #ff6f61;
   --text: #333;
