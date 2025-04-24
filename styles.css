@@ -1,16 +1,6 @@
 }
 x;
-  max-width: 600px;
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  z-index: 1;
-}
-
-/* Motivation Panel */
-.motivation-panel {
-  flex: 1;
-  padding: 30px;
+  max-
   background: rgba(0, 0, 0, 0.03);
   border-left: 1px solid rgba(0, 0, 0, 0.05);
   display: flex;
