@@ -1,1 +1,158 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover projects and take on community impact challenges.">
+  <title>Community Impact Platform</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="manifest" href="/manifest.json">
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+</head>
+<body>
+  <div class="app-container">
+    <!-- Wheel Panel -->
+    <div class="wheel-panel">
+      <header>
+        <h1>Community Impact <span class="wheel-emoji">🌍</span></h1>
+        <div class="controls">
+          <button id="dark-mode-toggle" aria-label="Toggle dark mode"><i class="fas fa-moon"></i></button>
+          <button id="sound-toggle" aria-label="Toggle sound"><i class="fas fa-volume-up"></i></button>
+        </div>
+      </header>
+      <div class="wheel-container">
+        <div id="wheel" class="wheel"></div>
+        <button id="spin-btn" class="spin-button">Spin!</button>
+        <div class="pointer"></div>
+      </div>
+      <div class="challenge-display">
+        <h2>Current Challenge</h2>
+        <p id="challenge-text">Spin the wheel for a new challenge!</p>
+        <div class="challenge-timer">
+          <div class="timer-bar"></div>
+          <span>Time remaining: 24 hours</span>
+        </div>
+        <div class="challenge-actions">
+          <button id="complete-challenge">Complete Challenge</button>
+          <button id="share-challenge">Share Challenge</button>
+        </div>
+      </div>
+      <div class="achievement-tracker">
+        <h2>Achievements</h2>
+        <div class="milestones">
+          <div class="milestone locked" data-target="1">
+            <span class="badge">🏅</span>
+            <p>First Challenge</p>
+            <small>Complete 1 challenge</small>
+          </div>
+          <div class="milestone locked" data-target="3">
+            <span class="badge">🏆</span>
+            <p>Impact Maker</p>
+            <small>Complete 3 challenges</small>
+          </div>
+          <div class="milestone locked" data-target="5">
+            <span class="badge">🌟</span>
+            <p>Community Hero</p>
+            <small>Complete 5 challenges</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Motivation Panel -->
+    <div class="motivation-panel">
+      <button class="mobile-menu-btn" aria-label="Toggle menu" aria-expanded="false">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav class="nav-links">
+        <a href="#skillsSection">Skills</a>
+        <a href="#resultsSection">Projects</a>
+        <a href="#getStartedBtn">Get Started</a>
+      </nav>
+      <section class="hero-text">
+        <h1>Make an Impact</h1>
+        <p class="subtitle">Find projects and take on challenges to contribute to your community.</p>
+        <div class="cta-container">
+          <button id="getStartedBtn" class="btn">Get Started</button>
+        </div>
+      </section>
+      <section id="skillsSection">
+        <h2>Add Your Skills</h2>
+        <div class="skill-input-container">
+          <input id="skillInput" type="text" placeholder="e.g., JavaScript" aria-label="Enter a skill">
+          <button id="addSkillBtn">Add</button>
+        </div>
+        <div id="skillsTags"></div>
+        <div class="level-options">
+          <label class="level-option">
+            <input type="radio" name="level" value="beginner" checked>
+            <span class="level-content">Beginner</span>
+          </label>
+          <label class="level-option">
+            <input type="radio" name="level" value="intermediate">
+            <span class="level-content">Intermediate</span>
+          </label>
+          <label class="level-option">
+            <input type="radio" name="level" value="advanced">
+            <span class="level-content">Advanced</span>
+          </label>
+        </div>
+      </section>
+      <button id="findProjectsBtn" class="btn">Find Projects</button>
+      <section id="resultsSection" hidden>
+        <h2>Project Results</h2>
+        <div class="filter-tags">
+          <button class="filter-tag active" data-filter="all">All</button>
+          <button class="filter-tag" data-filter="open-source">Open Source</button>
+          <button class="filter-tag" data-filter="community">Community</button>
+        </div>
+        <select id="sortBy" aria-label="Sort projects">
+          <option value="relevance">Relevance</option>
+          <option value="stars">Stars</option>
+          <option value="updated">Recently Updated</option>
+        </select>
+        <div id="projectsGrid"></div>
+        <div id="loadingSpinner" hidden>Loading projects...</div>
+        <div class="pagination">
+          <button id="prevPage" disabled>Previous</button>
+          <span id="pageInfo">Page 1 of 1</span>
+          <button id="nextPage" disabled>Next</button>
+        </div>
+      </section>
+      <div class="quote-container">
+        <div class="quote-slider">
+          <div class="quote active">
+            <p>"The greatest threat to our planet is the belief that someone else will save it."</p>
+            <small>- Robert Swan</small>
+          </div>
+          <div class="quote">
+            <p>"We don't have to engage in grand, heroic actions to participate in change."</p>
+            <small>- Howard Zinn</small>
+          </div>
+          <div class="quote">
+            <p>"Small acts, when multiplied by millions, can transform the world."</p>
+            <small>- Unknown</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="progress-tracker">
+    <div class="progress-container">
+      <span>Progress: <span id="completed-count">0</span>/<span id="total-challenges">10</span></span>
+      <div class="progress-bar">
+        <div id="progress-fill" class="progress-fill"></div>
+      </div>
+    </div>
+  </div>
+  <div id="particles-js"></div>
+  <audio id="spin-sound" src="https://assets.codepen.io/127738/spin.mp3"></audio>
+  <audio id="win-sound" src="https://assets.codepen.io/127738/win.mp3"></audio>
+  <audio id="complete-sound" src="https://assets.codepen.io/127738/complete.mp3"></audio>
+  <audio id="achievement-sound" src="https://assets.codepen.io/127738/achievement.mp3"></audio>
+  <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
