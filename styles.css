@@ -1,15 +1,4 @@
-
-n: var(--transition);
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.controls button:hover {
-  background: rgba(0, 0, 0, 0.1);
+ 0, 0.1);
 }
 
 /* Wheel Container */
