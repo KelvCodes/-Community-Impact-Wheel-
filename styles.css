@@ -1,14 +1,4 @@
 
-rimary-dark: #45a049;
-  --secondary: #6b5b95;
-  --accent: #ff6f61;
-  --text: #333;
-  --text-light: #777;
-  --bg: linear-gradient(135deg, #e0f7fa, #80deea);
-  --container-bg: rgba(255, 255, 255, 0.95);
-  --shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
-  --transition: all 0.3s ease;
-}
 
 /* Dark Mode Variables */
 .dark-mode {
