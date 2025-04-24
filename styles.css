@@ -1,16 +1,4 @@
-}
-x;
-  max-
-  background: rgba(0, 0, 0, 0.03);
-  border-left: 1px solid rgba(0, 0, 0, 0.05);
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  overflow: hidden;
-}
-
-.dark-mode .motivation-panel {
-  background: rgba(255, 255, 255, 0.03);
+ rgba(255, 255, 255, 0.03);
   border-left: 1px solid rgba(255, 255, 255, 0.05);
 }
 
