@@ -1,17 +1,5 @@
 
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--text);
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.wheel-emoji {
-  animation: float 3s ease-in-out infinite;
-}
-
-.controls {
+  fon
   display: flex;
   gap: 10px;
 }
