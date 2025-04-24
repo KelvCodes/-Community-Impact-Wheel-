@@ -1,18 +1,4 @@
- 0, 0.1);
-}
 
-/* Wheel Container */
-.wheel-container {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-  height: 320px;
-  perspective: 1000px;
-}
-
-.wheel {
   width: 320px;
   height: 320px;
   border-radius: 50%;
