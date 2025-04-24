@@ -1,13 +1,5 @@
 
 
-/* Dark Mode Variables */
-.dark-mode {
-  --text: #f5f7fa;
-  --text-light: #bbb;
-  --bg: linear-gradient(135deg, #1a1a2e, #16213e);
-  --container-bg: rgba(30, 30, 46, 0.95);
-  --shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
-}
 
 /* Base Styles */
 * {
