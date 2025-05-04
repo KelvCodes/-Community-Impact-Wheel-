@@ -1,7 +1,5 @@
 
-// Initialize
-function init() {
-  createWheelSections();
+teWheelSections();
   updateProgress();
   elements.totalChallenges.textContent = state.challenges.length;
   startQuoteRotation();
