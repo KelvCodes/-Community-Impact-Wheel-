@@ -1,5 +1,4 @@
-{ text: '💧 Reduce water usage', type: 'environment' },
-    { text: '♻️ Recycle 5 items', type: 'environment' },
+ { text: '♻️ Recycle 5 items', type: 'environment' },
     { text: '🍎 Donate to a food bank', type: 'community' },
     { text: '📚 Volunteer for an hour', type: 'community' },
     { text: '🛍️ Support a local business', type: 'community' },
