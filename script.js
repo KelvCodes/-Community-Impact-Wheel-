@@ -1,5 +1,4 @@
-// Dependencies (assumed loaded via CDN)
-const { debounce } = _;
+t { debounce } = _;
 
 // State
 const state = {
