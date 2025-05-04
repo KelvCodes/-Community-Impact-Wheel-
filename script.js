@@ -1,5 +1,4 @@
-rrentPage: 1,
-  challenges: [
+allenges: [
     { text: '🌱 Plant a tree', type: 'environment' },
     { text: '🚶‍♂️ Walk or bike instead of driving', type: 'environment' },
     { text: '💧 Reduce water usage', type: 'environment' },
