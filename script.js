@@ -1,5 +1,3 @@
-killInput: document.querySelector('#skillInput'),
-  addSkillBtn: document.querySelector('#addSkillBtn'),
   skillsTags: document.querySelector('#skillsTags'),
   levelOptions: document.querySelectorAll('.level-option input'),
   findProjectsBtn: document.querySelector('#findProjectsBtn'),
