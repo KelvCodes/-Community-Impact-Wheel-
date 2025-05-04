@@ -1,9 +1,6 @@
 
 
-// Constants
-const PROJECTS_PER_PAGE = 6;
-const COLORS = [
-  'linear-gradient(135deg, #ff6f61, #ff9a9e)',
+near-gradient(135deg, #ff6f61, #ff9a9e)',
   'linear-gradient(135deg, #6b5b95, #a288d4)',
   'linear-gradient(135deg, #88b04b, #b5d56a)',
   'linear-gradient(135deg, #ffd166, #ffde8d)',
