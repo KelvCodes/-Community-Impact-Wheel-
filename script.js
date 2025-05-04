@@ -1,7 +1,4 @@
-
-
-  projects: [],
-  currentPage: 1,
+rrentPage: 1,
   challenges: [
     { text: '🌱 Plant a tree', type: 'environment' },
     { text: '🚶‍♂️ Walk or bike instead of driving', type: 'environment' },
