@@ -1,6 +1,4 @@
-ext: '🚮 Organize a recycling drive', type: 'environment' },
-  ],
-  completedChallenges: JSON.parse(localStorage.getItem('completedChallenges') || '[]'),
+mpletedChallenges: JSON.parse(localStorage.getItem('completedChallenges') || '[]'),
   currentChallenge: null,
   isSpinning: false,
   soundEnabled: localStorage.getItem('soundEnabled') !== 'false',
