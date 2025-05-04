@@ -1,5 +1,4 @@
-ge: document.querySelector('#nextPage'),
-  pageInfo: document.querySelector('#pageInfo'),
+ageInfo: document.querySelector('#pageInfo'),
  nks: document.querySelector('.nav-links'),
   wheel: document.querySelector('#wheel'),
   spinBtn: document.querySelector('#spin-btn'),
