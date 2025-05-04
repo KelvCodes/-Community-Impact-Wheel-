@@ -1,6 +1,4 @@
-  skillsTags: document.querySelector('#skillsTags'),
-  levelOptions: document.querySelectorAll('.level-option input'),
-  findProjectsBtn: document.querySelector('#findProjectsBtn'),
+dProjectsBtn: document.querySelector('#findProjectsBtn'),
   resultsSection: document.querySelector('#resultsSection'),
   projectsGrid: document.querySelector('#projectsGrid'),
   loadingSpinner: document.querySelector('#loadingSpinner'),
