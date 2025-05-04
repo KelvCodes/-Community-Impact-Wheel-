@@ -1,5 +1,4 @@
-soundEnabled: localStorage.getItem('soundEnabled') !== 'false',
-  darkMode: localStorage.getItem('darkMode') === 'enabled',
+darkMode: localStorage.getItem('darkMode') === 'enabled',
 };
 
 // DOM Elements
