@@ -1,5 +1,3 @@
-darkMode: localStorage.getItem('darkMode') === 'enabled',
-};
 
 // DOM Elements
 const elements = {
