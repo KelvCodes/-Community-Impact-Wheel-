@@ -1,8 +1,4 @@
-
-elements.totalChallenges.textContent = state.challenges.length;
-  startQuoteRotation();
-  initParticles();
-  initAnimations();
+itAnimations();
   initServiceWorker();
   if (state.darkMode) {
     document.body.classList.add('dark-mode');
