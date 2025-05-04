@@ -1,6 +1,4 @@
-hareChallengeBtn: document.querySelector('#share-challenge'),
-  completedCount: document.querySelector('#completed-count'),
-  totalChallenges: document.querySelector('#total-challenges'),
+otalChallenges: document.querySelector('#total-challenges'),
   progressFill: document.querySelector('#progress-fill'),
   darkModeToggle: document.querySelector('#dark-mode-toggle'),
   soundToggle: document.querySelector('#sound-toggle'),
