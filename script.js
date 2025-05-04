@@ -1,7 +1,5 @@
 
-teWheelSections();
-  updateProgress();
-  elements.totalChallenges.textContent = state.challenges.length;
+elements.totalChallenges.textContent = state.challenges.length;
   startQuoteRotation();
   initParticles();
   initAnimations();
