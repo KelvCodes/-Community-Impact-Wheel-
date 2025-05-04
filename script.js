@@ -1,7 +1,6 @@
 ge: document.querySelector('#nextPage'),
   pageInfo: document.querySelector('#pageInfo'),
-  mobileMenuBtn: document.querySelector('.mobile-menu-btn'),
-  navLinks: document.querySelector('.nav-links'),
+ nks: document.querySelector('.nav-links'),
   wheel: document.querySelector('#wheel'),
   spinBtn: document.querySelector('#spin-btn'),
   challengeText: document.querySelector('#challenge-text'),
