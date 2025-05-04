@@ -1,7 +1,4 @@
-lterTags: document.querySelectorAll('.filter-tag'),
-  sortBy: document.querySelector('#sortBy'),
-  prevPage: document.querySelector('#prevPage'),
-  nextPage: document.querySelector('#nextPage'),
+ge: document.querySelector('#nextPage'),
   pageInfo: document.querySelector('#pageInfo'),
   mobileMenuBtn: document.querySelector('.mobile-menu-btn'),
   navLinks: document.querySelector('.nav-links'),
