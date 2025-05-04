@@ -1,5 +1,4 @@
-mpletedChallenges: JSON.parse(localStorage.getItem('completedChallenges') || '[]'),
-  currentChallenge: null,
+currentChallenge: null,
   isSpinning: false,
   soundEnabled: localStorage.getItem('soundEnabled') !== 'false',
   darkMode: localStorage.getItem('darkMode') === 'enabled',
