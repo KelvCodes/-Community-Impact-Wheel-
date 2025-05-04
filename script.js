@@ -1,5 +1,4 @@
-arkModeToggle: document.querySelector('#dark-mode-toggle'),
-  soundToggle: document.querySelector('#sound-toggle'),
+undToggle: document.querySelector('#sound-toggle'),
   spinSound: document.querySelector('#spin-sound'),
   winSound: document.querySelector('#win-sound'),
   completeSound: document.querySelector('#complete-sound'),
