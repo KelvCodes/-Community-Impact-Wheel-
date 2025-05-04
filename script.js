@@ -1,10 +1,4 @@
-ocument.body.classList.add('dark-mode');
-    elements.darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
-  }
-  if (!state.soundEnabled) {
-    elements.soundToggle.innerHTML = '<i class="fas fa-volume-mute"></i>';
-  }
-}
+
 
 // Animations
 function initAnimations() {
