@@ -1,7 +1,4 @@
-itAnimations();
-  initServiceWorker();
-  if (state.darkMode) {
-    document.body.classList.add('dark-mode');
+ocument.body.classList.add('dark-mode');
     elements.darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
   }
   if (!state.soundEnabled) {
