@@ -1,6 +1,4 @@
-uotes: document.querySelectorAll('.quote'),
-  particlesJS: document.querySelector('#particles-js'),
-};
+
 
 // Constants
 const PROJECTS_PER_PAGE = 6;
