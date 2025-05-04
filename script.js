@@ -1,6 +1,4 @@
-
-// DOM Elements
-const elements = {
+nst elements = {
   getStartedBtn: document.querySelector('#getStartedBtn'),
   skillsSection: document.querySelector('#skillsSection'),
   skillInput: document.querySelector('#skillInput'),
