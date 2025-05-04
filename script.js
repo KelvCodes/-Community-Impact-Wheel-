@@ -1,6 +1,5 @@
 
- state = {
-  skills: [],
+ ills: [],
   level: 'beginner',
   projects: [],
   currentPage: 1,
