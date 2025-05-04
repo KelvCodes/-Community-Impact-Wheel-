@@ -1,7 +1,3 @@
-near-gradient(135deg, #88b04b, #b5d56a)',
-  'linear-gradient(135deg, #ffd166, #ffde8d)',
-  'linear-gradient(135deg, #4b86b4, #7baed2)',
-];
 
 // Initialize
 function init() {
