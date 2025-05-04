@@ -1,6 +1,4 @@
-allenges: [
-    { text: '🌱 Plant a tree', type: 'environment' },
-    { text: '🚶‍♂️ Walk or bike instead of driving', type: 'environment' },
+  { text: '🚶‍♂️ Walk or bike instead of driving', type: 'environment' },
     { text: '💧 Reduce water usage', type: 'environment' },
     { text: '♻️ Recycle 5 items', type: 'environment' },
     { text: '🍎 Donate to a food bank', type: 'community' },
