@@ -1,6 +1,4 @@
-hievementSound: document.querySelector('#achievement-sound'),
-  milestones: document.querySelectorAll('.milestone'),
-  quotes: document.querySelectorAll('.quote'),
+uotes: document.querySelectorAll('.quote'),
   particlesJS: document.querySelector('#particles-js'),
 };
 
