@@ -1,5 +1,5 @@
 
- level: 'beginner',
+
   projects: [],
   currentPage: 1,
   challenges: [
