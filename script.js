@@ -1,5 +1,4 @@
- { text: '🌳 Join a community clean-up', type: 'environment' },
-    { text: '🚮 Organize a recycling drive', type: 'environment' },
+ext: '🚮 Organize a recycling drive', type: 'environment' },
   ],
   completedChallenges: JSON.parse(localStorage.getItem('completedChallenges') || '[]'),
   currentChallenge: null,
