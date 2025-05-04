@@ -1,6 +1,5 @@
 
-// State
-const state = {
+ state = {
   skills: [],
   level: 'beginner',
   projects: [],
