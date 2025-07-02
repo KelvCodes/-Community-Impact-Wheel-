@@ -1,9 +1,5 @@
 
     
- {
-    anime.timeline({ easing: 'easeOutExpo' })
-      .add({ targets: '.hero-text h1', translateY: [50, 0], opacity: [0, 1], duration: 800 })
-      .add({ targets: '.hero-text .subtitle', translateY: [30, 0], opacity: [0, 1], duration: 600 }, '-=400')
       .add({ targets: '.cta-container .btn', translateY: [20, 0], opacity: [0, 1], duration: 600, delay: anime.stagger(100) }, '-=200');
   }
 
