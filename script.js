@@ -1,7 +1,4 @@
 
-
-  spinSound: document.querySelector('#spin-sound'),
-  winSound: document.querySelector('#win-sound'),
   completeSound: document.querySelector('#complete-sound'),
   achievementSound: document.querySelector('#achievement-sound'),
   milestones: document.querySelectorAll('.milestone'),
