@@ -1,7 +1,4 @@
 
-
-  saveToLocalStorage() {
-    localStorage.setItem('completedChallenges', JSON.stringify(this.completedChallenges));
     localStorage.setItem('soundEnabled', this.soundEnabled);
     localStorage.setItem('darkMode', this.darkMode ? 'enabled' : 'disabled');
   }
