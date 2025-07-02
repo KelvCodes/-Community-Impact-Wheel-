@@ -1,6 +1,4 @@
 
-  completeSound: document.querySelector('#complete-sound'),
-  achievementSound: document.querySelector('#achievement-sound'),
   milestones: document.querySelectorAll('.milestone'),
   quotes: document.querySelectorAll('.quote'),
   particlesJS: document.querySelector('#particles-js'),
