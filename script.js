@@ -1,7 +1,4 @@
 
-  init() {
-    this.createWheelSections();
-    this.updateProgress();
     DOM.totalChallenges.textContent = this.state.challenges.length;
     this.startQuoteRotation();
     this.initParticles();
