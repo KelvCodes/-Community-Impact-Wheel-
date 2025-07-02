@@ -1,6 +1,4 @@
 
-nner';
-    this.projects = [];
     this.currentPage = 1;
     this.challenges = [
       { text: '🌱 Plant a tree', type: 'environment' },
