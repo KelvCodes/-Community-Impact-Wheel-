@@ -1,6 +1,4 @@
 
-  sortBy: document.querySelector('#sortBy'),
-  prevPage: document.querySelector('#prevPage'),
   nextPage: document.querySelector('#nextPage'),
   pageInfo: document.querySelector('#pageInfo'),
   mobileMenuBtn: document.querySelector('.mobile-menu-btn'),
