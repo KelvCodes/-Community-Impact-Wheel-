@@ -1,6 +1,4 @@
-
-    localStorage.setItem('soundEnabled', this.soundEnabled);
-    localStorage.setItem('darkMode', this.darkMode ? 'enabled' : 'disabled');
+setItem('darkMode', this.darkMode ? 'enabled' : 'disabled');
   }
 }
 
