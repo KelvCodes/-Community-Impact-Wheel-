@@ -1,9 +1,5 @@
 
-  particlesJS: document.querySelector('#particles-js'),
-};
-
-// App Logic
-class App {
+  pa
   constructor() {
     this.state = new AppState();
     this.init();
