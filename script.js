@@ -1,7 +1,5 @@
 
-  constructor() {
-    this.skills = [];
-    this.level = 'beginner';
+nner';
     this.projects = [];
     this.currentPage = 1;
     this.challenges = [
