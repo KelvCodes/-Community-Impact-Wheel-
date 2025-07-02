@@ -1,8 +1,4 @@
 
-    DOM.totalChallenges.textContent = this.state.challenges.length;
-    this.startQuoteRotation();
-    this.initParticles();
-    this.initAnimations();
     this.initServiceWorker();
     this.applyTheme();
     this.applySoundSettings();
