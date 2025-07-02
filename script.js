@@ -1,13 +1,4 @@
-
-  async spinWheel() {
-    if (this.state.isSpinning) return;
-    this.state.isSpinning = true;
-    DOM.spinBtn.classList.add('disabled');
-    DOM.spinBtn.setAttribute('aria-disabled', 'true');
-    if (this.state.soundEnabled) DOM.spinSound.play();
-
-    const randomDegree = Math.floor(Math.random() * 360) + 1440;
-    DOM.wheel.style.transform = `rotate(${randomDegree}deg)`;
+sform = `rotate(${randomDegree}deg)`;
 
     await new Promise(resolve => setTimeout(resolve, 4000));
     const normalizedDegree = randomDegree % 360;
