@@ -1,10 +1,4 @@
 
-  pa
-  constructor() {
-    this.state = new AppState();
-    this.init();
-  }
-
   init() {
     this.createWheelSections();
     this.updateProgress();
