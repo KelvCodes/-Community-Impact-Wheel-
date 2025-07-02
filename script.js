@@ -1,6 +1,4 @@
 
-  loadingSpinner: document.querySelector('#loadingSpinner'),
-  filterTags: document.querySelectorAll('.filter-tag'),
   sortBy: document.querySelector('#sortBy'),
   prevPage: document.querySelector('#prevPage'),
   nextPage: document.querySelector('#nextPage'),
