@@ -1,9 +1,4 @@
 
-    
-      .add({ targets: '.cta-container .btn', translateY: [20, 0], opacity: [0, 1], duration: 600, delay: anime.stagger(100) }, '-=200');
-  }
-
-  createWheelSections() {
     DOM.wheel.innerHTML = this.state.challenges
       .map((challenge, index) => {
         const rotation = (360 / this.state.challenges.length) * index;
