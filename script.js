@@ -1,9 +1,4 @@
-setItem('darkMode', this.darkMode ? 'enabled' : 'disabled');
-  }
-}
 
-// Constants
-const CONSTANTS = {
   PROJECTS_PER_PAGE: 6,
   COLORS: [
     'linear-gradient(135deg, #ff6f61, #ff9a9e)',
