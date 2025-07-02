@@ -1,5 +1,4 @@
 
-  skillsTags: document.querySelector('#skillsTags'),
   levelOptions: document.querySelectorAll('.level-option input'),
   findProjectsBtn: document.querySelector('#findProjectsBtn'),
   resultsSection: document.querySelector('#resultsSection'),
