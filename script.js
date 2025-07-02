@@ -1,7 +1,4 @@
 
-const DOM = {
-  getStartedBtn: document.querySelector('#getStartedBtn'),
-  skillsSection: document.querySelector('#skillsSection'),
   skillInput: document.querySelector('#skillInput'),
   addSkillBtn: document.querySelector('#addSkillBtn'),
   skillsTags: document.querySelector('#skillsTags'),
