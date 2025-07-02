@@ -1,7 +1,5 @@
 
-    this.initServiceWorker();
-    this.applyTheme();
-    this.applySoundSettings();
+    this.in
     this.bindEvents();
   }
 
