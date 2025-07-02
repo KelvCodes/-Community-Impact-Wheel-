@@ -1,6 +1,4 @@
 
-  milestones: document.querySelectorAll('.milestone'),
-  quotes: document.querySelectorAll('.quote'),
   particlesJS: document.querySelector('#particles-js'),
 };
 
