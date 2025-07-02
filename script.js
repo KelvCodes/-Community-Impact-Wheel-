@@ -1,10 +1,4 @@
 
-    this.in
-    this.bindEvents();
-  }
-
-  applyTheme() {
-    if (this.state.darkMode) {
       document.body.classList.add('dark-mode');
       DOM.darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
     }
