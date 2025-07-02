@@ -1,6 +1,4 @@
 
-  progressFill: document.querySelector('#progress-fill'),
-  darkModeToggle: document.querySelector('#dark-mode-toggle'),
   soundToggle: document.querySelector('#sound-toggle'),
   spinSound: document.querySelector('#spin-sound'),
   winSound: document.querySelector('#win-sound'),
