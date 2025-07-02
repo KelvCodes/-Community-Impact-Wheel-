@@ -1,6 +1,4 @@
-/* eslint-disable no-undef */
-
-// State Management
+tate Management
 class AppState {
   constructor() {
     this.skills = [];
