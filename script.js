@@ -1,7 +1,4 @@
-
-      { text: '🍎 Donate to a food bank', type: 'community' },
-      { text: '📚 Volunteer for an hour', type: 'community' },
-      { text: '🛍️ Support a local business', type: 'community' },
+,
       { text: '🌍 Spread awareness about climate change', type: 'community' },
       { text: '🌳 Join a community clean-up', type: 'environment' },
       { text: '🚮 Organize a recycling drive', type: 'environment' },
