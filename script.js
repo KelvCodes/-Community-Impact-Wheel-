@@ -1,9 +1,5 @@
 
-    DOM.wheel.innerHTML = this.state.challenges
-      .map((challenge, index) => {
-        const rotation = (360 / this.state.challenges.length) * index;
-        return `
-          <div class="wheel-section" style="transform: rotate(${rotation}deg); background: ${CONSTANTS.COLORS[index % CONSTANTS.COLORS.length]}" role="option" aria-label="${challenge.text}">
+    Dtion" style="transform: rotate(${rotation}deg); background: ${CONSTANTS.COLORS[index % CONSTANTS.COLORS.length]}" role="option" aria-label="${challenge.text}">
             <span>${challenge.text}</span>
           </div>
         `;
