@@ -1,6 +1,4 @@
 
-  nextPage: document.querySelector('#nextPage'),
-  pageInfo: document.querySelector('#pageInfo'),
   mobileMenuBtn: document.querySelector('.mobile-menu-btn'),
   navLinks: document.querySelector('.nav-links'),
   wheel: document.querySelector('#wheel'),
