@@ -1,6 +1,4 @@
 
-  spinBtn: document.querySelector('#spin-btn'),
-  challengeText: document.querySelector('#challenge-text'),
   completeChallengeBtn: document.querySelector('#complete-challenge'),
   shareChallengeBtn: document.querySelector('#share-challenge'),
   completedCount: document.querySelector('#completed-count'),
