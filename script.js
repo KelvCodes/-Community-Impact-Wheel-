@@ -1,6 +1,4 @@
-,
-      { text: '🌍 Spread awareness about climate change', type: 'community' },
-      { text: '🌳 Join a community clean-up', type: 'environment' },
+
       { text: '🚮 Organize a recycling drive', type: 'environment' },
     ];
     this.completedChallenges = JSON.parse(localStorage.getItem('completedChallenges') || '[]');
