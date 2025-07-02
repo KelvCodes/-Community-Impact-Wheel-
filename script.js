@@ -1,6 +1,4 @@
 
-    this.currentPage = 1;
-    this.challenges = [
       { text: '🌱 Plant a tree', type: 'environment' },
       { text: '🚶‍♂️ Walk or bike instead of driving', type: 'environment' },
       { text: '💧 Reduce water usage', type: 'environment' },
