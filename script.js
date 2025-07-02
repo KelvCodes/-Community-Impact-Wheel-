@@ -1,5 +1,4 @@
-tate Management
-class AppState {
+
   constructor() {
     this.skills = [];
     this.level = 'beginner';
