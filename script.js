@@ -1,13 +1,6 @@
 sform = `rotate(${randomDegree}deg)`;
 
-    await new Promise(resolve => setTimeout(resolve, 4000));
-    const normalizedDegree = randomDegree % 360;
-    const sectionAngle = 360 / this.state.challenges.length;
-    const winningIndex = Math.floor(normalizedDegree / sectionAngle);
-
-    this.state.currentChallenge = this.state.challenges[winningIndex];
-    DOM.challengeText.textContent = this.state.currentChallenge.text;
-    DOM.challengeText.setAttribute('aria-live', 'polite');
+bute('aria-live', 'polite');
     if (this.state.soundEnabled) DOM.winSound.play();
     this.state.isSpinning = false;
     DOM.spinBtn.classList.remove('disabled');
