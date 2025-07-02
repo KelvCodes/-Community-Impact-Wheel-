@@ -1,10 +1,5 @@
 
-      document.body.classList.add('dark-mode');
-      DOM.darkModeToggle.innerHTML = '<i class="fas fa-sun"></i>';
-    }
-  }
-
-  applySoundSettings() {
+    
     if (!this.state.soundEnabled) {
       DOM.soundToggle.innerHTML = '<i class="fas fa-volume-mute"></i>';
     }
