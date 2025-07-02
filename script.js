@@ -1,6 +1,4 @@
-getItem('soundEnabled') !== 'false';
-    this.darkMode = localStorage.getItem('darkMode') === 'enabled';
-  }
+
 
   saveToLocalStorage() {
     localStorage.setItem('completedChallenges', JSON.stringify(this.completedChallenges));
