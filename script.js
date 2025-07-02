@@ -1,7 +1,6 @@
 
       { text: '🚮 Organize a recycling drive', type: 'environment' },
-    ];
-    this.completedChallenges = JSON.parse(localStorage.getItem('completedChallenges') || '[]');
+    ];pletedChallenges = JSON.parse(localStorage.getItem('completedChallenges') || '[]');
     this.currentChallenge = null;
     this.isSpinning = false;
     this.soundEnabled = localStorage.getItem('soundEnabled') !== 'false';
