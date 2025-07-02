@@ -1,6 +1,4 @@
 
-  resultsSection: document.querySelector('#resultsSection'),
-  projectsGrid: document.querySelector('#projectsGrid'),
   loadingSpinner: document.querySelector('#loadingSpinner'),
   filterTags: document.querySelectorAll('.filter-tag'),
   sortBy: document.querySelector('#sortBy'),
