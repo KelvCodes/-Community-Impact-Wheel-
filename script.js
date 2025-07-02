@@ -1,9 +1,4 @@
 
-    'linear-gradient(135deg, #4b86b4, #7baed2)',
-  ],
-};
-
-// DOM Elements
 const DOM = {
   getStartedBtn: document.querySelector('#getStartedBtn'),
   skillsSection: document.querySelector('#skillsSection'),
