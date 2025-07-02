@@ -1,12 +1,4 @@
 
-    Dtion" style="transform: rotate(${rotation}deg); background: ${CONSTANTS.COLORS[index % CONSTANTS.COLORS.length]}" role="option" aria-label="${challenge.text}">
-            <span>${challenge.text}</span>
-          </div>
-        `;
-      })
-      .join('');
-  }
-
   async spinWheel() {
     if (this.state.isSpinning) return;
     this.state.isSpinning = true;
