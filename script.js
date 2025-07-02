@@ -1,6 +1,4 @@
 
-  completeChallengeBtn: document.querySelector('#complete-challenge'),
-  shareChallengeBtn: document.querySelector('#share-challenge'),
   completedCount: document.querySelector('#completed-count'),
   totalChallenges: document.querySelector('#total-challenges'),
   progressFill: document.querySelector('#progress-fill'),
