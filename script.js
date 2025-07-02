@@ -1,11 +1,6 @@
 
     
-    if (!this.state.soundEnabled) {
-      DOM.soundToggle.innerHTML = '<i class="fas fa-volume-mute"></i>';
-    }
-  }
-
-  initAnimations() {
+ {
     anime.timeline({ easing: 'easeOutExpo' })
       .add({ targets: '.hero-text h1', translateY: [50, 0], opacity: [0, 1], duration: 800 })
       .add({ targets: '.hero-text .subtitle', translateY: [30, 0], opacity: [0, 1], duration: 600 }, '-=400')
