@@ -1,6 +1,4 @@
-
-    this.isSpinning = false;
-    this.soundEnabled = localStorage.getItem('soundEnabled') !== 'false';
+getItem('soundEnabled') !== 'false';
     this.darkMode = localStorage.getItem('darkMode') === 'enabled';
   }
 
