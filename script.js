@@ -1,7 +1,4 @@
 
-  mobileMenuBtn: document.querySelector('.mobile-menu-btn'),
-  navLinks: document.querySelector('.nav-links'),
-  wheel: document.querySelector('#wheel'),
   spinBtn: document.querySelector('#spin-btn'),
   challengeText: document.querySelector('#challenge-text'),
   completeChallengeBtn: document.querySelector('#complete-challenge'),
